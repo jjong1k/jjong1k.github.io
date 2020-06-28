@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style type="text/css">
+	 *{padding: 0;margin: 0;}
+	li{list-style-type: none;}
+.clear{clear: both;}
+ #page{width: 1300px; margin: auto; border: 0px solid #bbbbbb;}
+.line{border-top: 1px solid #ebeef2;}
+a:link{text-decoration: none; color:#000;}
+a:visited{color:#000;}
+header{
+	width: 1250px;
+	height: 88px;
+	margin-top: 10px;
+	border: 0px solid #bbbbbb;
+	}
+		#logo{
+			float: left;
+			margin-top: 13px;
+			margin-left: 120px;
+			}
+		.search{
+			float: left;
+			position: relative;
+			}
+		.searchInput{
+			position: absolute;
+			top: 20px;
+			width:400px;
+			height:40px;
+			border: 2px solid #21a089;
+			font-size:15px ;
+			margin-left: 90px;
+			}
+		.img{
+			margin-top: 20px;
+			margin-left: 495px;
+			}
+		#top{
+			display: inline-block;
+			position: relative;
+			}
+				@keyframes textColorAnimation{
+					0%{color:red;}
+					40%{color:green;}
+					100%{color:blue;}
+					}
+				span{
+					position: relative;
+					top: 35px;
+					left: 110px;
+					animation-name: textColorAnimation;
+					animation-duration: 5s;
+					animation-iteration-count: infinite;
+					}
+
+		#top0{
+			position: absolute;
+			top: -38px;
+			right: 0px;
+			left: -30px;
+			}
+
+		#top1{
+			position: absolute;
+			float: right;
+			margin-top: -38px;
+			margin-left: 60px;
+			}
+
+		#top2{
+			position: relative;
+			float: right;
+			margin-top: -38px;
+			margin-left: 120px;
+			}
+
+nav{
+	width: 1250px;
+	height: 60px;
+	margin-top: 0px;
+	margin-left: 120px;
+	border: 0px solid #bbbbbb;
+	}
+	nav li{
+		display: inline-block;
+		margin: 20px 24px;
+		font-size: 20px;
+		}
+	.nav{
+		color:#4c9e8a;
+		padding-bottom: 13px;
+		border-bottom: solid 3px #4c9e8a;
+		}
+	#home{
+		float:right;
+		margin-top: 15px;
+  		margin-right: 130px;
+		}
+aside{
+	float: left;
+	}
+	.pFont{
+		font-size: 30px;
+		color: #4e4e4e;
+		margin-bottom: 20px;
+		}
+	#side{
+		margin-left:135px;
+		margin-top: 70px;
+		}
+	#paddr{
+		padding-bottom: 15px;
+		padding-top: 15px;
+		padding-left: 13px;
+		border-top: solid 3px #ebeef2;
+		background-color: #4c9e8a;
+		color: white;
+		}
+	.padd{
+		padding-bottom: 15px;
+		padding-top: 15px;
+		padding-left: 13px;
+		}
+	aside li{
+		border-bottom:1px solid #ebeef2;
+		font-size: 17px;
+		color: #4e4e4e;
+		}
+	aside li img{
+		float: right;
+		margin-left: 120px;
+		margin-right: 10px;
+		}
+		#rotate:hover{
+			transform: rotate(180deg);
+			}
+section li{
+	display: inline-block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	}
+	#sec2{
+		border-bottom:solid 1px #ebeef2;
+		float:middle;
+		width: 870px;
+		margin-top: 65px;
+		margin-left: 430px;
+		}
+	h1{
+		font-size: 30px;
+		margin-bottom: 25px;
+		}
+	.line2{
+		border-top: 3px solid black;
+		}
+	#mainImg{
+		border:solid 0px gray;
+		margin-left: 430px;
+		margin-top: 50px;
+		width: 870px;
+		}
+	#sec3{
+		border: solid 0px gray;
+		width: 870px;
+		margin-left: 430px;
+		margin-top: 30px;
+		padding-bottom: 70px;
+		}
+	.h3{
+		color: #1d4168;
+		}	
+	#sAside{
+		position: fixed;
+		background-color: #ebeef2;
+		right:0px;
+		margin-top: -40px;
+		border: solid 1px #bbbbbb;
+		border-radius: 5px;
+		}
+	#aside1 li{
+		border: solid 1px #bbbbbb;
+		padding: 10px 5px 10px 5px;
+		text-align: center;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		}
+	#aside2:hover{
+		background-color: #143760;
+		color: white;
+		}
+
+footer{}
+	#fonav{
+		border:solid 0px gray;
+		float: right;
+		margin-right: 130px;
+		padding-top: 17px;
+		padding-bottom: 17px;
+		}
+	#fonav li{
+		display: inline-block;
+		margin-right: 20px;
+		}
+	#address{
+		float: right;
+		margin-right: 130px;
+		}
+</style>
+</head>
+<body>
+	<header>
+		<div id="logo">
+			<a href="http://jjong1k.github.io/index.html"><img src="./index3_img/kcdc1.png" width="210px"></a>
+		</div>
+		<div class="search">
+			<form name="serchbox" method="post">
+				<input type="text" name="searchbox" value="" class="searchInput" placeholder=" 검색어를 입력해주세요.">
+				<img class="img" src="./img/searchimg.png" width="44" height="44">
+			</form>
+		</div>
+
+		<div id="top">
+			<span>인기키워드<span> <img src="./index3_img/v_img.png" id="top0" width="20" height="20">
+			<img src="./index3_img/eng_img.png" id="top1" width="48" height="28">
+			<img src="./index3_img/hamburger_img.png" id="top2" width="30" height="30">
+		</div>
+	</header>
+ <hr class="line">
+ <div class="clear"></div>
+
+ 	<nav>
+ 		<ul>
+			<li class="nav"> 감염병 </li>
+			<li> 건강정보 </li>
+			<li> 정책정보 </li>
+			<li><a href="http://jjong1k.github.io/index5.html"> 연구개발</a> </li>
+			<li><a href="http://jjong1k.github.io/index4.html"> 알림.자료</a> </li>
+			<li> 간행물.통계 </li>
+			<li> 민원.정보공개 </li>
+			<li> 기관소개 </li>
+			<li> 사업별홈페이지 </li>
+
+		</ul>
+	</nav>
+ <hr class="line">
+
+<section>
+	<div id="home">
+		<a href="http://jjong1k.github.io/index.html"><img src="./index3_img/home.png" width="30" height="28"></a>
+		<img src="./index3_img/home2.png" height="28">
+	</div>
+</section>
+
+ 	<aside id="side">
+ 		<p class="pFont">감염병</p>
+ 		<ul>
+ 			<li id="paddr">감염병정보 <img src="./index3_img/v3_img.png"  width="20"></li>
+ 			<li class="padd">해외감염정보 <img src="./index3_img/v_img.png" id="rotate" width="20"></li>
+ 			<li class="padd">감염병유행정보 <img src="./index3_img/v_img.png" id="rotate" width="20"></li>
+ 			<li class="padd">결핵 <img src="./index3_img/v_img.png" id="rotate" width="20"></li>
+ 			<li class="padd">예방접종 <img src="./index3_img/v_img.png" id="rotate" width="20"></li>
+ 			<li class="padd">감염병간행물 <img src="./index3_img/v_img.png" id="rotate" width="20"></li>
+ 		</ul>
+
+ 	</aside>
+
+ 	<section id="sec2">
+ 		<h1>감염병정보</h1>
+ 		<hr class="line2">
+ 			<ul>
+ 				<li>작성일 2019-05-15 |</li>
+ 				<li>최종수정일 2020-06-12 |</li>
+ 				<li>담당부서 의료감염관리과 |</li>
+ 				<li>연락처 043-719-7124</li>
+ 	</section>
+ 	<aside id="sAside">
+	<ul id="aside1">
+		<li> 사용자별<br>맞춤 메뉴 </li>
+		<li id="aside2"> 일반 </li>
+		<li id="aside2"> 연구 </li>
+		<li id="aside2"> 언론 </li>
+	</ul>
+</aside>
+ 	<section>
+ 		<div id="mainImg">
+ 			<img src="./index3_img/main_img.png" width="870">
+ 		</div>
+ 	</section>
+ 	<section id="sec3">
+ 		<ul>
+ 		<h3 class="h3"><img src="./index3_img/bluecircle1.png" width="20"> 감염병포털 소개</h3>
+ 				<li>법정감염병(전수/표본)의 현황(통계) 및 올바른 정보를 국민들이 쉽게 접근할 수 있는 감염병 정보 포털사이트</li>
+ 		</ul>
+ 	<br>
+ 		<ul>
+ 		<h3 class="h3"><img src="./index3_img/bluecircle1.png" width="20"> 통계</h3>
+ 			
+ 				<li>전수감시 감염병 : 전수감시 감염병에 대한 주요통계, 질병별 통계, 지역별 통계, 성별/연령별 통계에 대한 통계</li><p>
+ 				<li>표본감시 감염병 : 표본감시 감염병에 대한 통계</li><p>
+ 				<li>비브리오 감시 : 해수에서 측정한 비브리오 통계</li>
+
+ 		</ul>
+ 	<br>
+ 		<ul>
+ 		<h3 class="h3"><img src="./index3_img/bluecircle1.png" width="20"> 지침</h3>
+ 			
+ 				<li>법정감염병의 증상, 진단 및 치료, 신고기준, 예방과 같은 정보</li><p>
+ 				<li>감염병 관리, 각 기관에서 해야하는 수행체계, 감시체계, 실험실 검사, 역학조사, 환자관리/접촉자 관리, 방역관리에 대한 정보</li><p>
+ 		</ul>
+ 	<br> 
+ 		<ul>	
+ 		<h3 class="h3"><img src="./index3_img/bluecircle1.png" width="20"> 발간자료</h3>
+ 			
+ 				<li>감시연보 : 감염병 신고·보고된 법정감염병 현황을 분석 정리한 자료</li><p>
+ 				<li>역학조사연보 : 시·군·구 역학조사반의 신고 접수된 수인성·식품매개 감염병 집단발생에 분석 정리한 자료</li><p>
+ 				<li>주간소식지 : 표본감시 감염병 주간 정보</li><p>
+ 				<li>실험실 소식지 정보 : 병원체 및 매개체 주간 감시 정보</li>
+ 		</ul>
+
+ 	</section>
+ 	<div class="clear"></div>
+<footer>
+	 <hr class="line">
+	<div id="fonav">
+
+		<ul>
+		<li><h3>관련링크</h3></li>
+		<li>임상진료지침 디지털 가이드라인</li>
+		<li>KoGES</li>
+		<li>질병관리본부국제학술지(Osong PHRP)</li>
+		<li>만성신장병코호트연구</li>
+		<li>국민건강영양조사</li>
+		<li>국립의과학지식센터</li>
+		<li>보건복지통계</li>
+		</ul>
+	</div>
+	
+	<div id="address">
+		<img src="./img/f2.png" width="1207">
+	</div>	
+</footer>
+
+
+</body>
+</html>
